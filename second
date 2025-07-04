@@ -15,8 +15,8 @@
 <div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
 <div class="flex h-full grow flex-col">
 <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-stone-200 px-10 py-3">
-<div class="flex items-center gap-8">
-<div class="flex items-center gap-4 text-stone-900">
+    <div class="flex items-center gap-8">
+        <div class="flex items-center gap-4 text-stone-900">
 <svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
 <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path>
 </svg>
@@ -29,24 +29,84 @@
 </nav>
 </div>
 <div class="flex flex-1 items-center justify-end gap-4">
-<label class="hidden lg:flex flex-col min-w-40 !h-10 max-w-64">
-<div class="flex w-full flex-1 items-stretch rounded-full h-full">
-<div class="text-stone-500 flex border-none bg-stone-100 items-center justify-center pl-4 rounded-l-full border-r-0">
-<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
-<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
-</svg>
-</div>
-<input class="form-input w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-full text-stone-900 focus:outline-0 focus:ring-0 border-none bg-stone-100 focus:border-none h-full placeholder:text-stone-500 px-4 pl-2 text-base font-normal leading-normal" placeholder="Search" value=""/>
-</div>
-</label>
-<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-[var(--primary-color)] text-white text-sm font-bold leading-normal tracking-wide hover:bg-red-700 transition-colors">
-<span class="truncate">Post a Meal</span>
-</button>
-<button class="rounded-full">
-<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD3Byrjgu5UEkVy7qxMvDaVMVFn4CHty-8yhHfLDeQnN509XNXYMa0Pyz4Tk_0GSBWKK00M_bQcmxRtndK2Vb4Xeo9rtvvKnxnYILVP-X4JDtxShbxjLafliecHT8gWrHy-5IIb8-olJj_hsvlaLi7d5bCriSVCLHo34Cfgp4GVtgM9v2oVRk-t1J7OysfuvorspTTGnlJ0xoFJWM1trKI9Q24MupNEN4R_5BrNRjF_LbSk8dCl5Cdti-GdbF5YLA5FAIDStB6p--A");'></div>
-</button>
+    <!-- User Status Display -->
+    <div id="userStatus" class="text-sm">
+        <div id="guestUser" style="display: none;">
+            <button id="openLoginModal" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Login</button>
+            <button id="openRegisterModal" class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">Register</button>
+        </div>
+        <div id="loggedInUser" style="display: none;">
+            <!-- Content will be filled by JS: e.g., Welcome, User! Logout Button -->
+        </div>
+        <div id="logoutMessage" class="text-red-500"></div>
+    </div>
+
+    <label class="hidden lg:flex flex-col min-w-40 !h-10 max-w-64">
+        <div class="flex w-full flex-1 items-stretch rounded-full h-full">
+            <div class="text-stone-500 flex border-none bg-stone-100 items-center justify-center pl-4 rounded-l-full border-r-0">
+                <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+                <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+                </svg>
+            </div>
+            <input class="form-input w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-full text-stone-900 focus:outline-0 focus:ring-0 border-none bg-stone-100 focus:border-none h-full placeholder:text-stone-500 px-4 pl-2 text-base font-normal leading-normal" placeholder="Search" value=""/>
+        </div>
+    </label>
+    <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-[var(--primary-color)] text-white text-sm font-bold leading-normal tracking-wide hover:bg-red-700 transition-colors user-specific-content" style="display: none;">
+        <span class="truncate">Post a Meal</span>
+    </button>
+    <button class="rounded-full user-specific-content" style="display: none;">
+        <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD3Byrjgu5UEkVy7qxMvDaVMVFn4CHty-8yhHfLDeQnN509XNXYMa0Pyz4Tk_0GSBWKK00M_bQcmxRtndK2Vb4Xeo9rtvvKnxnYILVP-X4JDtxShbxjLafliecHT8gWrHy-5IIb8-olJj_hsvlaLi7d5bCriSVCLHo34Cfgp4GVtgM9v2oVRk-t1J7OysfuvorspTTGnlJ0xoFJWM1trKI9Q24MupNEN4R_5BrNRjF_LbSk8dCl5Cdti-GdbF5YLA5FAIDStB6p--A");'></div>
+    </button>
 </div>
 </header>
+
+<!-- Auth Modal -->
+<div id="authModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex items-center justify-center" style="display: none; z-index: 100;">
+    <div class="relative p-8 bg-white w-full max-w-md m-auto flex-col flex rounded-lg shadow-lg">
+        <button id="closeAuthModal" class="absolute top-0 right-0 mt-4 mr-4 text-gray-700 hover:text-gray-900 text-2xl leading-none">&times;</button>
+
+        <!-- Login Form Container -->
+        <div id="loginFormContainer">
+            <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
+            <form id="loginForm">
+                <div class="mb-4">
+                    <label for="loginUsername" class="block text-sm font-medium text-gray-700">Username</label>
+                    <input type="text" id="loginUsername" name="username" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+                <div class="mb-6">
+                    <label for="loginPassword" class="block text-sm font-medium text-gray-700">Password</label>
+                    <input type="password" id="loginPassword" name="password" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+                <button type="submit" class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Login</button>
+                <div id="loginMessage" class="mt-4 text-center text-red-500"></div>
+            </form>
+            <p class="mt-4 text-center text-sm">Don't have an account? <button id="switchToRegister" class="text-blue-500 hover:underline">Register here</button></p>
+        </div>
+
+        <!-- Registration Form Container -->
+        <div id="registrationFormContainer" style="display: none;">
+            <h2 class="text-2xl font-bold mb-6 text-center">Register</h2>
+            <form id="registrationForm">
+                <div class="mb-4">
+                    <label for="registerUsername" class="block text-sm font-medium text-gray-700">Username</label>
+                    <input type="text" id="registerUsername" name="username" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+                <div class="mb-4">
+                    <label for="registerPassword" class="block text-sm font-medium text-gray-700">Password</label>
+                    <input type="password" id="registerPassword" name="password" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+                <div class="mb-6">
+                    <input type="checkbox" id="isBusiness" name="isBusiness" class="mr-2">
+                    <label for="isBusiness" class="text-sm font-medium text-gray-700">Register as a Business</label>
+                </div>
+                <button type="submit" class="w-full bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Register</button>
+                <div id="registrationMessage" class="mt-4 text-center text-red-500"></div>
+            </form>
+            <p class="mt-4 text-center text-sm">Already have an account? <button id="switchToLogin" class="text-blue-500 hover:underline">Login here</button></p>
+        </div>
+    </div>
+</div>
+
 <main class="flex-1 px-4 sm:px-10 lg:px-20 py-8">
 <div class="mx-auto max-w-7xl">
 <div class="mb-8">
@@ -173,4 +233,5 @@
 </div>
 </div>
 
+<script src="/static/js/main.js"></script>
 </body></html>
