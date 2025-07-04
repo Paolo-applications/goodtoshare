@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>FoodShare - Combat Food Waste, Support People in Need</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body class="bg-stone-50 text-stone-900" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-stone-200 px-10 py-4">
+<div class="flex items-center gap-10">
+<a class="flex items-center gap-3 text-stone-900" href="/">
+<svg class="h-8 w-8 text-[#e92933]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+<h2 class="text-xl font-bold tracking-[-0.015em]">FoodShare</h2>
+</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-base font-medium text-stone-700 hover:text-[#e92933] transition-colors" href="#">Home</a>
+<a class="text-base font-medium text-stone-700 hover:text-[#e92933] transition-colors" href="#">About</a>
+<a class="text-base font-medium text-stone-700 hover:text-[#e92933] transition-colors" href="#">How it Works</a>
+<a class="text-base font-medium text-stone-700 hover:text-[#e92933] transition-colors" href="#">Contact</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end items-center gap-4">
+<label class="relative hidden lg:block">
+<div class="absolute inset-y-0 left-0 flex items-center pl-3 text-stone-500">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</div>
+<input class="form-input w-full min-w-0 flex-1 resize-none overflow-hidden rounded-full h-10 border-stone-300 bg-white placeholder:text-stone-500 pl-10 pr-4 text-base font-normal focus:ring-2 focus:ring-[#e92933] focus:border-[#e92933]" placeholder="Search meals..." value=""/>
+</label>
+<div class="flex gap-2">
+<button class="flex min-w-[90px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-5 bg-stone-100 text-stone-800 text-base font-bold leading-normal tracking-[0.015em] hover:bg-stone-200 transition-colors">
+<span class="truncate">Log In</span>
+</button>
+<button class="flex min-w-[90px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-5 bg-[#e92933] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-red-700 transition-colors">
+<span class="truncate">Sign Up</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-10 lg:py-16">
+<div class="layout-content-container flex flex-col max-w-6xl flex-1 px-4">
+<div class="relative flex min-h-[500px] flex-col items-center justify-center gap-8 rounded-2xl bg-cover bg-center bg-no-repeat p-6 text-center text-white" style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB55cjC4zgrNF1pQ56dLo8bTir7Mrsv6FpLpboXCJ-_3yn3fcxzydpTeSIpNtmeeHpQ9PoWhde-jyXTuCDqMRf9PdQkelkVrmIQZGmbZWlT2GmcQ00i6JYo3S94MUWs6w4krdBs-yzD_v5-ARLCnNjCSiDhflIniXs5jVl060GQjLgcMiDuqwFv0scmzhsRyG8DpkGB6hwiQW8XWjiXbyMHFVcMMlaTSzvwiyAKVdz6pXdWDLcGl9UaPpCTOYZF_nMWRVVnw7MZ2l8");'>
+<div class="flex flex-col gap-4">
+<h1 class="text-4xl font-black leading-tight tracking-tight md:text-6xl">
+                  Share Your Surplus, Nourish Our Community
+                </h1>
+<p class="mx-auto max-w-3xl text-lg font-normal leading-relaxed text-stone-200">
+                  Join FoodShare in our mission to reduce food waste and provide nutritious meals to those in need. Whether you're a business with surplus food or an individual looking to make a difference, we've got you covered.
+                </p>
+</div>
+<div class="flex-wrap gap-4 flex justify-center">
+<button class="flex min-w-[160px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[#e92933] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-red-700 transition-transform duration-300 ease-in-out transform hover:scale-105">
+<span class="truncate">Get Started</span>
+</button>
+</div>
+</div>
+<section class="py-16 sm:py-24">
+<div class="flex flex-col gap-4 text-center mb-12">
+<h2 class="text-3xl font-bold leading-tight tracking-tight text-stone-900 sm:text-4xl">Featured Meals</h2>
+<p class="text-lg text-stone-600">Freshly prepared meals, ready to be enjoyed.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-white">
+<div class="w-full h-56 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDQDZETN2GOe0JYpm1EUZ_54YjTJC74zqOUMIoq8KNvLblHFb4Sb_vfz6W8Qi3rdGIY-QMWJXekr5RiJvZ3RJNiJB9vbcXzgsez7S7Ng_pSrqs7xCFroc-84FD-uBc0bnCMFIsb4tZiwG_UL3UrKHrf99OEm_4pi0gIuLlAp-7iKlSE1YU2VGoj_1kn5Yrg4gz0KAitNaTdOEBVuH8FMvUEZ_rKPhkHvWpCMyrhWWkgcKoZBs0o2Aj2QzyR2TW6mpHh7RU2ldThJZA");'></div>
+<div class="p-6 flex-1 flex flex-col">
+<h3 class="text-xl font-bold leading-normal mb-2">Delicious and Nutritious</h3>
+<p class="text-stone-600 text-base font-normal leading-relaxed flex-1">Explore a wide range of meals prepared with care and delivered with love.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-white">
+<div class="w-full h-56 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBEHT5nL08xOwkBGJT9Oaomx5Ol-p6tXDsdFyIU_mCITc7jDbl0farS8OYe6tUYL54vA2EmqfgbqPRIXQoKlgVMH8DXmrlS3tlA5QuULtHHyzKbt0SCn8KyzjbIQEQo1S1Fe8kaSiPfPzo1VfGOhaPvCVdKgZj_3_yiLv2mEr7IUoYllMVzP7lkxQMW3FYzHvAmbAlnJ2nIeMGPUQnjv4FLMYbWjSpYh62Zb4bmwtjBuIoRPAnvJqcT34UNQZzHdwpfx_zXCOMX8Dw");'></div>
+<div class="p-6 flex-1 flex flex-col">
+<h3 class="text-xl font-bold leading-normal mb-2">Fresh and Local Ingredients</h3>
+<p class="text-stone-600 text-base font-normal leading-relaxed flex-1">Our meals are made with the freshest ingredients sourced from local farms and businesses.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-white">
+<div class="w-full h-56 bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDID2HcrehdIw1Rf8wMxJSDpN9cQEJh4pICwA5S01brw4wnbSfcvuDQ892bpHGHJR9I-Kib19td-EeuWw09txo8etwlZvpWfY8aP29rXRnk0N2RFtZZlKJ4sE5Gadcn7HDZqjCF2sTx7px7Co9H-xrtjYbFS-glBmJ_LDMI3CHvquCPH8p84-LJ8tNG-9kQiEMoF2vV06qYwd_m8v2JqPhuexDASVJQOohoowuLYlGrDq7ZAoj-eIscygJb2ixa92e_hr1UwPKEez0");'></div>
+<div class="p-6 flex-1 flex flex-col">
+<h3 class="text-xl font-bold leading-normal mb-2">Variety of Options</h3>
+<p class="text-stone-600 text-base font-normal leading-relaxed flex-1">From hearty stews to light salads, we have something for everyone.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 sm:py-24 bg-stone-100 rounded-2xl">
+<div class="flex flex-col gap-4 text-center mb-12 px-4">
+<h2 class="text-3xl font-bold leading-tight tracking-tight text-stone-900 sm:text-4xl">Our Partners</h2>
+<p class="text-lg text-stone-600">Proudly working with organizations dedicated to our cause.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 px-4 items-center">
+<div class="aspect-w-1 aspect-h-1"><div class="w-full h-full bg-center bg-no-repeat bg-contain" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAuv91Nalx6k-DB0Uq_bVOgbzezZ04m0P2Hx7i3FsCDb4g96Vsj13FIC24-QfzbnmIAf8zC918_WMVwItl4IN3KWkMIfrEzccyusf6yYuLdLl5oDUljXie9iA8dW1bNUULBZPTlxwtGgNG2mTLAXdqw4dnONZOuK8wa07fAkYnrovCeh16Rx6THp_2mKROxwPjnqEZrEIlHmSugb3t0Gc7SuBSYzVmY3dVSbZC_V3XZSXg78G4No3eo0s86dEgy9ZaiGJZtbhaleq0"); filter: grayscale(100%) contrast(0.5);'></div></div>
+<div class="aspect-w-1 aspect-h-1"><div class="w-full h-full bg-center bg-no-repeat bg-contain" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCCFFu891UCrcAoXKihCVLz57eiuon_lxNOLj_toun_FdEzUCOIBapWZ7tygkNMHxutdStdnwFKiGzEA-oxbG9DRXRHgdZEZ0J82AJzG-s213v_HywmAlMy8YuuHtG4T1m_RNCh4TEVuCTDg30iVWQHopnFJIZp7PMeA6BpshpAZnURmIDU7xCan0ExFdfZr9SfTUe26vomD_hOLCZesLKvpjpk5B8rY6nOy8EtHwgOHO-MeqhpFTjoF7bEDW1ZiOuuR1yIXV_HmRE"); filter: grayscale(100%) contrast(0.5);'></div></div>
+<div class="aspect-w-1 aspect-h-1"><div class="w-full h-full bg-center bg-no-repeat bg-contain" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAz3rFXKj6cvMpJzHtlBcZcnUwF7nxxbe80EYcvfOaSJFHpX_V2xmy2WGznyfIj2ek5TW0FQ1i-Jh1E3hBnKa2padUH4exia6FmvMuyyGjVcEozmzUv61Ohm9g_w7lZP5B_eeBErSShIm29cqVshQYUuDqAsB8nzpaO8-BiRB0ZiHkHNulGCg6mQYUIl7wP7B2hvjpLy_d_Qs0HzFLmDKOgUOlYZumLMz4yRJ_1sFQOXHRVBmCea8OMWdeTjocD2YzJ31S6kiXfu5k"); filter: grayscale(100%) contrast(0.5);'></div></div>
+<div class="aspect-w-1 aspect-h-1"><div class="w-full h-full bg-center bg-no-repeat bg-contain" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAfrU2Ja92f35TFjhjGAMpjS5TDluxSuNUUUmqgMff3RPLA-0aS2Ro_c-YsdghgzsX7WU3SgbfY80Anifp8QB3tqYmQ2fShvL8npc0WgfIpcnJTdP0JEZWq7icDL9kKRwukImLsaw4IuGA_tepsNtVK0wgF8cjCDP1JB6pBvEA2RDSoRVijVXX6eduT2WIQLRgwUZbh5z2fwrSL6fRiMJo2ShlbTzILsgLDnaHSaGgxhb4fi-HejyrHK31TKs1QC4KAvTCwBk8XuXY"); filter: grayscale(100%) contrast(0.5);'></div></div>
+</div>
+</section>
+<section class="py-16 sm:py-24">
+<div class="flex flex-col gap-4 text-center mb-12">
+<h2 class="text-3xl font-bold leading-tight tracking-tight text-stone-900 sm:text-4xl">Our Impact</h2>
+<p class="text-lg text-stone-600">Making a tangible difference, one meal at a time.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+<div class="flex flex-col gap-2 rounded-xl p-8 bg-stone-100">
+<p class="text-[#e92933] text-5xl font-bold leading-tight">10,000+</p>
+<p class="text-stone-700 text-lg font-medium leading-normal">Meals Donated</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-8 bg-stone-100">
+<p class="text-[#e92933] text-5xl font-bold leading-tight">5,000 lbs</p>
+<p class="text-stone-700 text-lg font-medium leading-normal">Food Saved from Waste</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-8 bg-stone-100">
+<p class="text-[#e92933] text-5xl font-bold leading-tight">2,000+</p>
+<p class="text-stone-700 text-lg font-medium leading-normal">People Helped</p>
+</div>
+</div>
+</section>
+<section class="py-16 sm:py-24">
+<div class="flex flex-col items-center justify-center gap-6 text-center rounded-2xl bg-stone-100 p-10 md:p-20">
+<div class="flex flex-col gap-4">
+<h2 class="text-3xl font-bold tracking-tight text-stone-900 sm:text-4xl">Get Involved Today</h2>
+<p class="mx-auto max-w-2xl text-lg text-stone-600">Join our community of food savers and nourishers. Sign up now to start making a difference.</p>
+</div>
+<div class="flex justify-center">
+<button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[#e92933] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-red-700 transition-transform duration-300 ease-in-out transform hover:scale-105">
+<span class="truncate">Sign Up Now</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</main>
+<footer class="bg-stone-100">
+<div class="mx-auto max-w-6xl px-4 py-12">
+<div class="flex flex-col items-center gap-8">
+<div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
+<a class="text-stone-600 hover:text-[#e92933] text-base font-normal leading-normal transition-colors" href="#">About</a>
+<a class="text-stone-600 hover:text-[#e92933] text-base font-normal leading-normal transition-colors" href="#">Contact</a>
+<a class="text-stone-600 hover:text-[#e92933] text-base font-normal leading-normal transition-colors" href="#">Privacy Policy</a>
+<a class="text-stone-600 hover:text-[#e92933] text-base font-normal leading-normal transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="flex justify-center gap-6">
+<a class="text-stone-500 hover:text-[#e92933] transition-colors" href="#"><svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path></svg></a>
+<a class="text-stone-500 hover:text-[#e92933] transition-colors" href="#"><svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path></svg></a>
+<a class="text-stone-500 hover:text-[#e92933] transition-colors" href="#"><svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path></svg></a>
+</div>
+<p class="text-stone-500 text-base font-normal leading-normal text-center">© 2024 FoodShare. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+
+</body></html>
