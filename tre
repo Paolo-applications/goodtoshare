@@ -1,0 +1,131 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #e92933;
+        --secondary-color: #f7f3f2;
+        --text-primary: #1c1c1c;
+        --text-secondary: #5a5a5a;
+      }
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+    </style>
+</head>
+<body class="bg-white">
+<div class="relative flex size-full min-h-screen flex-col group/design-root" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 px-10 py-4">
+<div class="flex items-center gap-3 text-2xl font-bold text-[var(--text-primary)]">
+<svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+<span>FoodShare</span>
+</div>
+<div class="flex items-center gap-8 text-base text-[var(--text-secondary)]">
+<a class="hover:text-[var(--primary-color)]" href="#">Home</a>
+<a class="text-[var(--primary-color)] font-medium" href="#">Explore</a>
+<a class="hover:text-[var(--primary-color)]" href="#">Favorites</a>
+<a class="hover:text-[var(--primary-color)]" href="#">Orders</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="relative rounded-full p-2.5 hover:bg-gray-100">
+<svg class="h-6 w-6 text-[var(--text-secondary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<button class="relative rounded-full p-2.5 hover:bg-gray-100">
+<svg class="h-6 w-6 text-[var(--text-secondary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6 6 0 10-12 0v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjYS05RCtpzPQV0C9UlD3XIML2NvLIdrKG0e7zMHIMjwMD684hEFz2KSig44Be9ZRR5CHnnEg69nJt5K-tVKFDdYnuXZ3WEOJodE27McYm9a-ETa4sJUdhb6DTvLb2hJKeyNKa7fUT5QU8DeYtR4LrM2SEawokRHtW5YzYKS4oN_3BpT7VkHul-f9w1-vmSnYtjLilgFoV4hmc-cfrEDE8lHV7yX4AGYKqx4dmeQ4YHPHoyMl7dT9erGoxbhFbszJPJWzHjySuhnc");'></div>
+</div>
+</header>
+<main class="flex-1 bg-[var(--secondary-color)] px-20 py-12">
+<div class="mx-auto max-w-7xl">
+<div class="mb-6 text-sm text-[var(--text-secondary)]">
+<a class="hover:text-[var(--primary-color)]" href="#">Explore</a>
+<span class="mx-2">/</span>
+<span class="text-[var(--text-primary)] font-medium">Italian</span>
+</div>
+<div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
+<div class="flex flex-col gap-6">
+<div class="w-full overflow-hidden rounded-2xl">
+<img alt="Pasta Primavera" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJIWN_3uWoaVGKhp6KXTrNPNyCJThG7z7dnIKmzpLnmymVUdchTVgrlhzlEkJbroldC0_UKWr6UEZNopWMBg_Z9Qi7PUsYZum_Hh4w5FH38G44D8VG1zjKoy0AEy7GDl-YGU2qavFrepmJafMamZ7efCpIEv8UNjeFMjpgSw-1Fl7W1Y9x8_ELNCY7sFJOwjfSfsnW0HJhmncjgv-PO63OIci5Lcw8Dxhluc88gyJ6Cx9QvSxG-RkUKVIDaiFO-9TLrTHzQDYNFT4"/>
+</div>
+<div>
+<h1 class="text-4xl font-bold text-[var(--text-primary)]">Pasta Primavera</h1>
+<p class="mt-2 text-lg text-[var(--text-secondary)]">A delightful pasta dish featuring fresh seasonal vegetables, tossed in a light garlic and herb sauce. Perfect for a light lunch or dinner.</p>
+</div>
+<div class="space-y-4">
+<h3 class="text-xl font-bold text-[var(--text-primary)]">Price</h3>
+<div class="rounded-lg border border-gray-200 bg-white p-4">
+<div class="flex items-center justify-between py-2">
+<p class="text-[var(--text-secondary)]">Original Price</p>
+<p class="text-lg font-medium text-[var(--text-primary)] line-through">$15.00</p>
+</div>
+<div class="flex items-center justify-between py-2">
+<p class="text-[var(--text-secondary)]">Discounted Price</p>
+<p class="text-2xl font-bold text-[var(--primary-color)]">$7.50</p>
+</div>
+</div>
+</div>
+<div class="flex gap-4">
+<button class="flex-1 rounded-full bg-[var(--primary-color)] py-3 px-6 text-center text-lg font-bold text-white shadow-md transition-transform hover:scale-105">Purchase</button>
+<button class="flex-1 rounded-full border border-gray-300 bg-white py-3 px-6 text-center text-lg font-bold text-[var(--text-primary)] shadow-md transition-transform hover:scale-105">Donate</button>
+</div>
+</div>
+<div class="flex flex-col gap-8">
+<div class="space-y-4">
+<h3 class="text-xl font-bold text-[var(--text-primary)]">Pickup Details</h3>
+<div class="rounded-lg border border-gray-200 bg-white p-6">
+<div class="grid grid-cols-[auto_1fr] gap-x-4 gap-y-5 text-base">
+<div class="font-medium text-[var(--text-secondary)]">Time</div>
+<div class="text-[var(--text-primary)]">Today, 5:00 PM - 6:00 PM</div>
+<div class="font-medium text-[var(--text-secondary)]">Instructions</div>
+<div class="text-[var(--text-primary)]">Please arrive at the restaurant during the specified pickup window. Show your order confirmation to the staff.</div>
+<div class="font-medium text-[var(--text-secondary)]">Address</div>
+<div class="text-[var(--text-primary)]">123 Main Street, Anytown, USA</div>
+<div class="font-medium text-[var(--text-secondary)]">Contact</div>
+<div class="text-[var(--text-primary)]">Phone: (555) 123-4567</div>
+</div>
+</div>
+</div>
+<div>
+<h3 class="mb-4 text-xl font-bold text-[var(--text-primary)]">Similar Meals</h3>
+<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2">
+<div class="group transform cursor-pointer overflow-hidden rounded-xl bg-white shadow-sm transition-all duration-300 hover:shadow-lg">
+<img alt="Margherita Pizza" class="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBenVaVt731Yf4cA4vRsfrda2s5FMl6Iu1ofcV4GP5TMO2GAfGaSfaIS6zMwiLTtoYAQwB0OemJ6yJLPJs-APttJThyK3Fea2UBE1KfxACynb8Pv7dds4jOvWxn5KT2CJqDItBd5r6TlVF3DzuxaimAKj94llii35b6I79FjvCW1e9b-5YqqsgnFMW6VumChsT0YySGvZPqoXNg3uoPA_RuNkiz6tz6DlT3T9k5rr3RXLqrcWZCQ0Rgvo0YAVB30TH9TtCRMZ0b8kw"/>
+<div class="p-4">
+<h4 class="text-lg font-semibold text-[var(--text-primary)]">Margherita Pizza</h4>
+<p class="text-[var(--text-secondary)]">$6.00 <span class="text-sm line-through">$12.00</span></p>
+</div>
+</div>
+<div class="group transform cursor-pointer overflow-hidden rounded-xl bg-white shadow-sm transition-all duration-300 hover:shadow-lg">
+<img alt="Garden Salad" class="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgxY1scHrHwvd-kaZFKk0K9U5x8qBJgC0AvC6JO-owDtAUSY-KzF4vRSvmg31tHG5t3pZyvXOwSNDGn0Bo_SEgat2Ih6bVJ9WD1Q6pSi7ABuxfvbrUA1iG7uypMAcpha1s9orbSXHqyu20hCexcpiY8Ah5crSS4Qt4bEydaJKrqq4IlpeVxSh4Bud70N1MXzjKwfZPnCLjaDgXDniHr1aIaTXWA1t4mdaijtyHxZXIxjUDrtt_-pjeqZD4HGrWpNuQySh7DBvX3LI"/>
+<div class="p-4">
+<h4 class="text-lg font-semibold text-[var(--text-primary)]">Garden Salad</h4>
+<p class="text-[var(--text-secondary)]">$4.00 <span class="text-sm line-through">$8.00</span></p>
+</div>
+</div>
+<div class="group transform cursor-pointer overflow-hidden rounded-xl bg-white shadow-sm transition-all duration-300 hover:shadow-lg sm:col-span-2 lg:col-span-1">
+<img alt="Turkey Sandwich" class="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVcc5fC_71UCUo1q8ZnUD58VPGQT0yZl0emniLZQI9MAtd5QNbSOj6A0t92Ua6A6nMtuD49tb-ntrQLvEgKrpIBrAhcY7firsnIksAg0FdnBREq5OiXA6pwyVUQTp7Ff5-qfWdUNiIFTJRc6y5Sy-GoGqbu3WGjNoOhwRSYTztZGQvxqBAFS6P3iNCUUCde-EJPQlj4D-4EOp_lPh5-s5P13M9WN-HvhsszOkd7ELOKgrWCgoRntxo8HHI4ArCaP4GARZVkICE3xQ"/>
+<div class="p-4">
+<h4 class="text-lg font-semibold text-[var(--text-primary)]">Turkey Sandwich</h4>
+<p class="text-[var(--text-secondary)]">$3.00 <span class="text-sm line-through">$6.00</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>
