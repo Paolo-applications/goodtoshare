@@ -1,0 +1,176 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #e92933;
+      }
+    </style>
+</head>
+<body class="bg-stone-50" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+<div class="flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-stone-200 px-10 py-3">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-stone-900">
+<svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path>
+</svg>
+<h2 class="text-2xl font-bold leading-tight tracking-[-0.015em]">FoodShare</h2>
+</div>
+<nav class="hidden items-center gap-9 md:flex">
+<a class="text-base font-medium text-stone-700 hover:text-[var(--primary-color)]" href="#">Home</a>
+<a class="text-base font-medium text-stone-700 hover:text-[var(--primary-color)]" href="#">About</a>
+<a class="text-base font-medium text-stone-700 hover:text-[var(--primary-color)]" href="#">Contact</a>
+</nav>
+</div>
+<div class="flex flex-1 items-center justify-end gap-4">
+<label class="hidden lg:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-full h-full">
+<div class="text-stone-500 flex border-none bg-stone-100 items-center justify-center pl-4 rounded-l-full border-r-0">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</div>
+<input class="form-input w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-full text-stone-900 focus:outline-0 focus:ring-0 border-none bg-stone-100 focus:border-none h-full placeholder:text-stone-500 px-4 pl-2 text-base font-normal leading-normal" placeholder="Search" value=""/>
+</div>
+</label>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-[var(--primary-color)] text-white text-sm font-bold leading-normal tracking-wide hover:bg-red-700 transition-colors">
+<span class="truncate">Post a Meal</span>
+</button>
+<button class="rounded-full">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD3Byrjgu5UEkVy7qxMvDaVMVFn4CHty-8yhHfLDeQnN509XNXYMa0Pyz4Tk_0GSBWKK00M_bQcmxRtndK2Vb4Xeo9rtvvKnxnYILVP-X4JDtxShbxjLafliecHT8gWrHy-5IIb8-olJj_hsvlaLi7d5bCriSVCLHo34Cfgp4GVtgM9v2oVRk-t1J7OysfuvorspTTGnlJ0xoFJWM1trKI9Q24MupNEN4R_5BrNRjF_LbSk8dCl5Cdti-GdbF5YLA5FAIDStB6p--A");'></div>
+</button>
+</div>
+</header>
+<main class="flex-1 px-4 sm:px-10 lg:px-20 py-8">
+<div class="mx-auto max-w-7xl">
+<div class="mb-8">
+<h1 class="text-4xl font-bold text-stone-900 leading-tight tracking-tighter">Available Meals</h1>
+<p class="text-stone-600 text-lg mt-2">Find delicious, discounted meals from local businesses.</p>
+</div>
+<div class="flex flex-wrap items-center gap-4 mb-8">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-stone-200 hover:bg-stone-300 transition-colors pl-4 pr-3 text-stone-800">
+<span class="text-sm font-medium">Category</span>
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+</svg>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-stone-200 hover:bg-stone-300 transition-colors pl-4 pr-3 text-stone-800">
+<span class="text-sm font-medium">Location</span>
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+</svg>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-stone-200 hover:bg-stone-300 transition-colors pl-4 pr-3 text-stone-800">
+<span class="text-sm font-medium">Price</span>
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+</svg>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-stone-200 hover:bg-stone-300 transition-colors pl-4 pr-3 text-stone-800">
+<span class="text-sm font-medium">Pickup Time</span>
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+</svg>
+</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<div class="flex flex-col gap-4 bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDHKOhy4P1ULheDWfbne1Ye2B11CzHqsGx0I5K0XQtIsDib7Djgw5KKmq5RLxNrE6CysEUZ15essYUVfS3LjDjWa9mO0jS-HC4fOeZSXi5wYgDQ_YEQWRAd0YghYjT1777VMv04_bwKzWfey7DiiiHEqUDZ0Ponjwlrj5ANJL3k7Iug56SVZZfhwGc_jneilIGgy0tq5QgKchZ5_6fne0uGqlWQDss85Uwc94jhgE-z7LsraJviExfm0zYgbwdpniBy6vxrZnGVYq4");'></div>
+<div class="p-4 pt-0">
+<h3 class="text-lg font-bold text-stone-900">Sushi Combo</h3>
+<p class="text-stone-600 text-sm mt-1">Fresh sushi combo with various rolls</p>
+<div class="flex items-center gap-2 mt-3">
+<p class="text-xl font-bold text-[var(--primary-color)]">$12.99</p>
+<p class="text-sm text-stone-500 line-through">$25.99</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCDe5DtjEnnCIuEt5iAi5p_D7SuwkaYB0VPAmsTbVWentWGJ2klXRBBeCSCi-5edGX3-_5w3F3Lgn1UQ-0e6O_AUPAPoBB5oVceDt8M13CgDPVLR1iUE7FsxxQq6eQaU5t-_hAJ6XMBNWx00gIYMQ8rcAWWcpIKeeuZMeLfK8QVcawsMJJ3kSrtwUqDEVU9Kr8qhsxD4pKI1DUkBPGEGY80uNuOOEI8OpaXuQtLrkDPxLWH6izADj0OoNh7QNbMgYDvOTvzZS4vaas");'></div>
+<div class="p-4 pt-0">
+<h3 class="text-lg font-bold text-stone-900">Pizza Special</h3>
+<p class="text-stone-600 text-sm mt-1">Large pizza with your choice of toppings</p>
+<div class="flex items-center gap-2 mt-3">
+<p class="text-xl font-bold text-[var(--primary-color)]">$9.99</p>
+<p class="text-sm text-stone-500 line-through">$19.99</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCDnEVSUgFnUvdHfRM0V-VezZWnyhWb188v59s1vtNGPf_rxN0PiYzUDDioJdHoKPxi-EWF7gEnQt7VrsGBzqyBroyqg-L2RstSWPnWNhioI9AN3qTMC7pfjwUA4r_HFtgXMnBJYBauroLdVpMQQ65M3j0ZEfP33T3EZ-w9sxt4A-bcWDZHkUzACptPV_p6_C5yCt6-rEuv-4cdpVb6jIeXRq08bXf5g_Hi8AplyoihfiWdXsE-18hQPv0Usqaz8fWOyIpSmjLGJH8");'></div>
+<div class="p-4 pt-0">
+<h3 class="text-lg font-bold text-stone-900">Bakery Box</h3>
+<p class="text-stone-600 text-sm mt-1">Assorted pastries and bread from our bakery</p>
+<div class="flex items-center gap-2 mt-3">
+<p class="text-xl font-bold text-[var(--primary-color)]">$7.50</p>
+<p class="text-sm text-stone-500 line-through">$15.00</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAY7vkJzyLIUOuxCZWEPPMhsES_MKhNjqB1VrH0yBtZ-fqyd3D6fKJNJHHTc20_Bx3fDgteUOQ3DRWRdOCD_7sOvIQXSSfY_gj6Pz9EGqmn0S_AJhHxwCu6s0300qmMVY9oaEQO9SASa4ytSVLHI6yVq80gZxVMWBwFBpdKKDJ-qrKFi0s0McV0zeVLr27nheyrR6njtdSvcHK2Xucls71MW4ybVnWJdEDYfVAajOLNd-Z1tR9xTAhjUcvB911om7BJFdoJmGJK_R4");'></div>
+<div class="p-4 pt-0">
+<h3 class="text-lg font-bold text-stone-900">Salad Bowl</h3>
+<p class="text-stone-600 text-sm mt-1">Healthy salad bowl with fresh ingredients</p>
+<div class="flex items-center gap-2 mt-3">
+<p class="text-xl font-bold text-[var(--primary-color)]">$8.00</p>
+<p class="text-sm text-stone-500 line-through">$16.00</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA5hzuimlzvT1ssHnCmim0iADcnU10SOV7a5wiYlLk1TRtpj5IvsGj-DkBGgW-Bdp8sGEOJwXg-9Gskc4KnRgTZligEw4ReYSHd4jyjI8izepeHTmIFNzBQiTtbPZsvhYgjattchCQhbcCuWvbeIBqh-tj4yaRX0WhwLSpfeEBkNT0FW4mMMPEDtrLCXK1XOzEQzGVtQ76YsQcH8ImNiHA85lqpGrTDKFRs9l-LNaoR7d8oF-SO4t5w_6J-gfM5EJKKzU0IYiQhnI0");'></div>
+<div class="p-4 pt-0">
+<h3 class="text-lg font-bold text-stone-900">Pasta Delight</h3>
+<p class="text-stone-600 text-sm mt-1">Creamy pasta dish with your choice of sauce</p>
+<div class="flex items-center gap-2 mt-3">
+<p class="text-xl font-bold text-[var(--primary-color)]">$10.50</p>
+<p class="text-sm text-stone-500 line-through">$21.00</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCbPV9eqsvK-U8eWbVKs7nw8kevvk8JdJ5DxK2ZvImO9wRO21TbvCwRPOrFHLGBl-p94JQ9VtjW45q7G4IByMr46UXRMlOa8JICsNQjREiWoACuu1lUHAV-eogZiFQsEIqnD47I-tp7beM8AB-HyWpcC1sm902t2wcp01O0VlW9_xLCwSyj4RoLLVMaoMGD5_ZUXfqcfAhSf2vV6uqABqviPYcMBiDRIjYde2BOJWJn7fb34_AtxqZKJdyDgJiaRMgwhisvt1rVHDA");'></div>
+<div class="p-4 pt-0">
+<h3 class="text-lg font-bold text-stone-900">Taco Tuesday</h3>
+<p class="text-stone-600 text-sm mt-1">Tacos with a variety of fillings</p>
+<div class="flex items-center gap-2 mt-3">
+<p class="text-xl font-bold text-[var(--primary-color)]">$6.99</p>
+<p class="text-sm text-stone-500 line-through">$13.99</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-center p-4 mt-8">
+<nav aria-label="Pagination" class="flex items-center gap-2">
+<a class="flex size-10 items-center justify-center rounded-full text-stone-600 hover:bg-stone-100 transition-colors" href="#">
+<span class="sr-only">Previous</span>
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path>
+</svg>
+</a>
+<a aria-current="page" class="flex size-10 items-center justify-center rounded-full text-sm font-bold text-white bg-[var(--primary-color)]" href="#">1</a>
+<a class="flex size-10 items-center justify-center rounded-full text-sm font-medium text-stone-600 hover:bg-stone-100 transition-colors" href="#">2</a>
+<a class="flex size-10 items-center justify-center rounded-full text-sm font-medium text-stone-600 hover:bg-stone-100 transition-colors" href="#">3</a>
+<a class="flex size-10 items-center justify-center rounded-full text-sm font-medium text-stone-600 hover:bg-stone-100 transition-colors" href="#">4</a>
+<a class="flex size-10 items-center justify-center rounded-full text-sm font-medium text-stone-600 hover:bg-stone-100 transition-colors" href="#">5</a>
+<a class="flex size-10 items-center justify-center rounded-full text-stone-600 hover:bg-stone-100 transition-colors" href="#">
+<span class="sr-only">Next</span>
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+</svg>
+</a>
+</nav>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>
