@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>FoodShare - Donation Dashboard</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #e92933;
+        --primary-color-light: #fdedee;
+        --secondary-color: #1a1a1a;
+        --text-color-primary: #1a1a1a;
+        --text-color-secondary: #707070;
+      }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 px-10 py-4 shadow-sm">
+<div class="flex items-center gap-4 text-[var(--secondary-color)]">
+<svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path></svg>
+<h2 class="text-[var(--secondary-color)] text-xl font-bold leading-tight tracking-[-0.015em]">FoodShare</h2>
+</div>
+<nav class="flex items-center gap-8 text-sm font-medium text-gray-600">
+<a class="hover:text-[var(--primary-color)] transition-colors" href="#">Explore</a>
+<a class="hover:text-[var(--primary-color)] transition-colors" href="#">How it Works</a>
+<a class="hover:text-[var(--primary-color)] transition-colors" href="#">Organizations</a>
+<a class="hover:text-[var(--primary-color)] transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-[var(--primary-color)] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-red-700 transition-colors">
+<span class="truncate">Donate</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-gray-200" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAGcsgeCu1xXYHW7sYg2tLh3vRzm2hsapoH4VTdEaGD078hXPzt_VastdeCLZkZ3QJW6Bd7tMBQtN2DOnJY2Ws2dFz7dSMhq2BXEIdYdY6B1e9g5Yhxd_EoTu069PRuqX6zak0RyH8Nkjvj_D05Y1-FFX6NCxF8kEqUxQAJmAGZ2M7xVltwRHxnLla8jj1a0BMfUDIzMvtrLpQtrpkTmWVdE_QgmUvbP7gO65rn3r5kbHrnSgMWk1K9dMqlULEzyt2JumGdNmZXwgo");'></div>
+</div>
+</header>
+<main class="flex-1 px-4 sm:px-6 lg:px-8 py-12">
+<div class="max-w-7xl mx-auto">
+<div class="mb-12 text-center">
+<h1 class="text-4xl font-extrabold tracking-tight text-[var(--text-color-primary)] sm:text-5xl">Donation Dashboard</h1>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-[var(--text-color-secondary)]">Track your contributions and see the incredible impact you're making.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white shadow-md border border-gray-100 text-center">
+<p class="text-[var(--text-color-secondary)] text-base font-medium leading-normal">Total Meals Donated</p>
+<p class="text-[var(--primary-color)] text-5xl font-bold leading-tight">250</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white shadow-md border border-gray-100 text-center">
+<p class="text-[var(--text-color-secondary)] text-base font-medium leading-normal">Organizations Supported</p>
+<p class="text-[var(--primary-color)] text-5xl font-bold leading-tight">5</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 bg-white shadow-md border border-gray-100 text-center">
+<p class="text-[var(--text-color-secondary)] text-base font-medium leading-normal">People Helped</p>
+<p class="text-[var(--primary-color)] text-5xl font-bold leading-tight">125</p>
+</div>
+</div>
+<h2 class="text-3xl font-bold tracking-tight text-[var(--text-color-primary)] mb-6">Recent Donations</h2>
+<div class="overflow-x-auto @container bg-white rounded-xl shadow-md border border-gray-100">
+<table class="w-full text-sm text-left text-gray-500">
+<thead class="text-xs text-gray-700 uppercase bg-gray-50">
+<tr>
+<th class="px-6 py-3" scope="col">Date</th>
+<th class="px-6 py-3" scope="col">Organization</th>
+<th class="px-6 py-3 text-center" scope="col">Meals Donated</th>
+<th class="px-6 py-3 text-center" scope="col">Status</th>
+<th class="px-6 py-3 text-right" scope="col">Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr class="bg-white border-b hover:bg-gray-50">
+<td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">2024-03-15</td>
+<td class="px-6 py-4">Community Kitchen</td>
+<td class="px-6 py-4 text-center">50</td>
+<td class="px-6 py-4 text-center">
+<span class="inline-flex items-center px-3 py-1 text-sm font-medium text-green-800 bg-green-100 rounded-full">
+<svg class="w-3 h-3 mr-1.5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg>
+                        Delivered
+                      </span>
+</td>
+<td class="px-6 py-4 text-right">
+<a class="font-medium text-[var(--primary-color)] hover:underline" href="#">View Details</a>
+</td>
+</tr>
+<tr class="bg-white border-b hover:bg-gray-50">
+<td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">2024-03-01</td>
+<td class="px-6 py-4">Local Shelter</td>
+<td class="px-6 py-4 text-center">100</td>
+<td class="px-6 py-4 text-center">
+<span class="inline-flex items-center px-3 py-1 text-sm font-medium text-green-800 bg-green-100 rounded-full">
+<svg class="w-3 h-3 mr-1.5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg>
+                          Delivered
+                        </span>
+</td>
+<td class="px-6 py-4 text-right">
+<a class="font-medium text-[var(--primary-color)] hover:underline" href="#">View Details</a>
+</td>
+</tr>
+<tr class="bg-white hover:bg-gray-50">
+<td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">2024-02-15</td>
+<td class="px-6 py-4">Food Bank</td>
+<td class="px-6 py-4 text-center">100</td>
+<td class="px-6 py-4 text-center">
+<span class="inline-flex items-center px-3 py-1 text-sm font-medium text-green-800 bg-green-100 rounded-full">
+<svg class="w-3 h-3 mr-1.5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg>
+                          Delivered
+                        </span>
+</td>
+<td class="px-6 py-4 text-right">
+<a class="font-medium text-[var(--primary-color)] hover:underline" href="#">View Details</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</main>
+<footer class="bg-white border-t border-gray-200 mt-auto">
+<div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col items-center justify-between lg:flex-row">
+<nav class="flex flex-wrap justify-center gap-x-6 gap-y-2 lg:order-2">
+<a class="text-gray-500 hover:text-gray-900" href="#">About</a>
+<a class="text-gray-500 hover:text-gray-900" href="#">Terms of Service</a>
+<a class="text-gray-500 hover:text-gray-900" href="#">Privacy Policy</a>
+<a class="text-gray-500 hover:text-gray-900" href="#">Contact Us</a>
+</nav>
+<p class="mt-8 text-sm text-gray-500 lg:mt-0 lg:order-1">© 2024 FoodShare. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+
+</body></html>
